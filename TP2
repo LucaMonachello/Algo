@@ -11,7 +11,7 @@ def ex1():
    
 
 def ex2():
-    age = int(input("Donnez votre âge :"))
+    age = int(input("Donnez votre âge :\n"))
     annee = 2022-age
     print("Votre annee de naissance est donc :",annee)
 
@@ -69,12 +69,12 @@ def ex7():
 
 
 def ex8():
-    x=int(input("Entrez un nombre décimal : "))
-    if x>=2 and x<3:
+    x=float(input("Entrez un nombre décimal : "))
+    if  not x <2.0 and x<3.0:
         print("x appartient à I")
-    elif x>0 and x<=1:
+    elif not x <0.0 and not x==0.0 and x<1.0:
         print("x appartient à I")
-    elif x>=-10 and x<=-2:
+    elif not x <-10.0 and x<-2.0 or x==-2:
         print("x appartient à I")
     else:
         print("x n'appartient pas à I")
